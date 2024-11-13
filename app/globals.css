@@ -25,19 +25,7 @@ html {
   width: 100%; /* Se adapta al ancho de su contenedor */
   max-width: 100%; /* Asegura que no se desborde */
 }
-@media (max-width: 768px) {
-  .titulo {
-    font-size: 15vw; /* Aumenta el tamaño en pantallas más pequeñas (tabletas) */
-    height: 20vh; /* Aumenta la altura para dispositivos más pequeños */
-  }
-}
 
-@media (max-width: 480px) {
-  .titulo {
-    font-size: 20vw; /* Aumenta aún más el tamaño en pantallas de teléfonos móviles */
-    height: 30vh; /* Asegura que el título tenga espacio adecuado */
-  }
-}
 .titulo1{
   font-family:'Times New Roman', Times, serif;
   display: flex;
@@ -81,13 +69,14 @@ html {
   align-items: center;
   border: 1px solid #040404;
   margin:10px;
-  padding: 1rem 1rem;
-  border-radius: 5px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   background-color:rgb(212, 209, 209);
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .opciones{
   display: grid;
@@ -98,13 +87,16 @@ html {
   margin: 0 auto;
 }
 .precionar{
+  justify-content: center;
+  
   border: 1px solid #999999;
   margin:1rem auto;
   padding: 1rem 2rem;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction:column;
   gap: 1rem;
+  flex-wrap: wrap;
   width: 100%; /* Hacer que ocupe el 100% del contenedor */
   max-width: 600px; 
   box-sizing: border-box;/* Incluir padding y border en el cálculo del ancho */
@@ -196,4 +188,76 @@ html {
   background-color: #0508ca;
   color: #0508ca;
   
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 12vw; /* Ajusta el tamaño en pantallas más pequeñas */
+    height: 15vh;    /* Ajuste de altura */
+  }
+
+  .titulo1 {
+    font-size: 4vw;  /* Ajuste en tamaño de fuente para .titulo1 */
+  }
+
+  .titulo2 {
+    font-size: 2.5vw;  /* Ajuste en tamaño de fuente para .titulo2 */
+  }
+
+  .tex {
+    font-size: 1.8vw;  /* Ajuste en tamaño de fuente para .tex */
+  }
+
+  .cuestionario {
+    padding: 1rem;  /* Menos padding en pantallas pequeñas */
+  }
+
+  .opciones {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columnas en tabletas */
+  }
+
+  .btn {
+    font-size: 1.2rem;  /* Ajuste en tamaño de fuente para botones */
+    padding: 0.7rem 1.4rem;  /* Ajuste de padding */
+  }
+
+  .footer {
+    padding: 1rem;  /* Menos padding en el footer */
+  }
+}
+
+/* Para pantallas más pequeñas (max-width: 480px) */
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 18vw;  /* Ajuste de tamaño de fuente más grande */
+    height: 20vh;     /* Más altura en móviles */
+  }
+
+  .titulo1 {
+    font-size: 5vw;  /* Ajuste en tamaño de fuente para .titulo1 */
+  }
+
+  .titulo2 {
+    font-size: 3vw;  /* Ajuste en tamaño de fuente para .titulo2 */
+  }
+
+  .tex {
+    font-size: 2vw;  /* Ajuste de tamaño de fuente para .tex */
+  }
+
+  .cuestionario {
+    padding: 0.5rem;  /* Aumenta el padding para pantallas más pequeñas */
+  }
+
+  .opciones {
+    grid-template-columns: 1fr;  /* Una columna en móviles */
+  }
+
+  .btn {
+    font-size: 1rem;  /* Ajuste más pequeño de los botones */
+    padding: 0.6rem 1.2rem;  /* Ajuste del padding */
+  }
+
+  .footer {
+    padding: 0.8rem;  /* Ajuste de padding en el footer */
+  }
 }
