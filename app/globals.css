@@ -6,6 +6,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -15,13 +17,26 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7vh;
+  height: 10vh;
   font-weight:bold;
   font-family:Arial;
   font-size: 8vw; /* 8% del ancho de la ventana */
   text-align: center;
   width: 100%; /* Se adapta al ancho de su contenedor */
   max-width: 100%; /* Asegura que no se desborde */
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 15vw; /* Aumenta el tamaño en pantallas más pequeñas (tabletas) */
+    height: 20vh; /* Aumenta la altura para dispositivos más pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 20vw; /* Aumenta aún más el tamaño en pantallas de teléfonos móviles */
+    height: 30vh; /* Asegura que el título tenga espacio adecuado */
+  }
 }
 .titulo1{
   font-family:'Times New Roman', Times, serif;

@@ -37,15 +37,15 @@ export default function Home() {
 
 return (
   <div >
-    <h1 className="titulo">Donar </h1>
+    <h1 className="titulo">Donar Libros</h1>
 
     <div className="cuestionario">
-      <h1 className="titulo1">Informacion del Usuario</h1>
+      <h1 className="titulo1">Información del Usuario</h1>
       <div>{persona()}</div>
     </div>
 
     <div className="cuestionario">
-      <h1 className="titulo1">Informacion del Libro</h1>
+      <h1 className="titulo1">Información del Libro</h1>
       <div>{codigo()}</div>
     </div>
 

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 const Cuadro=({dato})=>{
-    const [nombre, setNombre] = useState("aaaa");
+    const [nombre, setNombre] = useState("");
     return(
         <input
             type="text"

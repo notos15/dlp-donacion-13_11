@@ -54,7 +54,7 @@ export function persona() {
                     <div className='rellenar'>
                         <label >
                             <input type="checkbox" checked={isChecked} onChange={(e) => setChecked(e.target.checked)} disabled={!hasSeenTerms}  />
-                            <button className="texto-enlace"  onClick={toggleModal} >Terminos y Condiciones</button>
+                            <button className="texto-enlace"  onClick={toggleModal} >Términos y Condiciones</button>
                             <Modal isOpen={isModalOpen} onClose={handleModalClose} />
                         </label>
                     </div>
