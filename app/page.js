@@ -37,7 +37,7 @@ export default function Home() {
 
 return (
   <div >
-    <h1 className="titulo">Donar Libros</h1>
+    <h1 className="titulo">Donar </h1>
 
     <div className="cuestionario">
       <h1 className="titulo1">Informacion del Usuario</h1>
