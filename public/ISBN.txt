@@ -1,0 +1,2 @@
+El ISBN,ISBN13 o ISSN, es un codigo con 13 cifras, que sirve para identificar el libro, comic o revista.
+El cual puede encontrarse en la parte de atras del del texto, en las primeras paginas o en las ultimas paginas de este.

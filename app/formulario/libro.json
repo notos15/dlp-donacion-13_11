@@ -1,0 +1,35 @@
+{
+    "cuadrotx":[
+        {
+            "id":"Nombre del libro",
+            "gris":"Escriba el nombre correctamente"
+        },
+        {
+            "id":"Nombre del Autor",
+            "gris":"si es mas de uno separelo por comas"
+        }
+        
+        
+    ],
+    "tes":[
+        
+        { 
+            "id": "Genero", 
+            "pregunta":"Datos del Libro",
+            "opciones": ["Manga","Libro","Comic","Revista","Fantasia","Romance","Juvenil","Misterio","Terror","Ciencia ficcion","Historia","Literatura clásica"],
+            "tipo":"checkbox"
+        }
+        
+    ],
+    "Codigo":[
+        
+            {
+                "id": "anonimo",
+                "pregunta": "¿Tiene a mano el ISBN del libro?",
+                "opciones": ["Si", "No"],
+                "tipo": "radio"
+            }
+        
+    ]
+
+}
